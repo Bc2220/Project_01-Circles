@@ -66,4 +66,4 @@ switch (i) {
   default: c = color(0,0,0); break;
 } return c; }
 
-function keyPressed(){ if (key == 's')saveCanvas('myCanvas', 'jpg');}
+function keyPressed(){ if (key == 'c')saveCanvas('myCanvas', 'jpg');}
