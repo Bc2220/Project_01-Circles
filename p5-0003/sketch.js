@@ -15,7 +15,7 @@ function setup() {
 //Navy(0,0,128)
 function draw() {
  
-  if (mouseIsPressed)  eggs.push(new Scramble());
+  if (mouseIsPressed && key != 's')  eggs.push(new Scramble());
   for (let i = 0; i < eggs.length; i++) {
    eggs[i].move();
     eggs[i].display();
@@ -65,4 +65,4 @@ switch (i) {
   case 6: c = color(0,0,128); break;
   default: c = color(0,0,0); break;
 } return c; }
-function keyPressed(){ if (key == 'c')saveCanvas('myCanvas', 'jpg');}
+function keyPressed(){ if (key == 's')saveCanvas('myCanvas', 'jpg');}
